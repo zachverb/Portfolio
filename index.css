@@ -1,0 +1,112 @@
+* {
+  margin:0;
+  padding:0;
+  font-family: 'Lato', sans-serif;
+  color:white;
+}
+
+body {
+  text-align: center;
+  height:100vh;
+  overflow:auto;
+}
+
+i {
+  color:black;
+}
+
+/*.navbar {
+  background-color:white;
+  border-color:white;
+}*/
+ 
+/*.navbar-default .navbar-nav>li>a {
+  color:white;
+}
+*/
+#main {
+  width:100%;
+  text-align: center;
+  margin-top:50px;
+  overflow:hidden;
+  background-color: #6586A7;
+  height:100%;
+  padding-top:100px;
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  color:white;
+}
+
+#main h1 {
+  top: 30%;
+  transform: translate(-50%, -50%) 
+  font-size:15pt;
+  display:inline-block;
+  letter-spacing: 2px;
+  font-style: normal;
+  font-weight: 100;
+}
+
+#main h3 {
+  top:40%;
+  font-style: normal;
+  font-weight: 100;
+}
+
+.parallax {
+  font-size: 200%;
+  width:20%;
+}
+
+ /* add some padding to force scrollbars */
+.parallax__layer {
+  padding: 100vh 0;
+}
+
+.circular {
+  margin-top: 5px;
+  margin-bottom:5px;
+  margin-left:auto;
+  margin-right:auto;
+  width: 150px;
+  height: 150px;
+  border-radius: 75px;
+  -webkit-border-radius: 75px;
+  -moz-border-radius: 75px;
+  background: url(zach.jpg);
+  background-size: cover;
+  box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+  -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -ms-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
+.circular:hover {
+  opacity:.5;
+}
+
+#links {
+  list-style-type: none;
+  text-align:center;
+  width: 15%;
+  margin:auto;
+}
+
+#links li {
+  padding:5px;
+  display:inline-block;
+  -webkit-transition: opacity .25s ease-in-out;
+  -moz-transition: opacity .25s ease-in-out;
+  -ms-transition: opacity .25s ease-in-out;
+  -o-transition: opacity .25s ease-in-out;
+  transition: opacity .25s ease-in-out;
+}
+
+#links li:hover {
+  opacity:.5;
+}
