@@ -54,6 +54,14 @@ i {
   font-weight: 100;
 }
 
+#oscl8r {
+  background: url(oscl8r.png);
+  top:100vh;
+  width:100%;
+  height:94vh;
+  background-size:cover;
+}
+
 .parallax {
   font-size: 200%;
   width:20%;
@@ -74,7 +82,7 @@ i {
   border-radius: 75px;
   -webkit-border-radius: 75px;
   -moz-border-radius: 75px;
-  background: url(zach.jpg);
+  background: url(zachverbeck.jpg);
   background-size: cover;
   box-shadow: 0 0 8px rgba(0, 0, 0, .8);
   -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
@@ -86,18 +94,14 @@ i {
   transition: opacity 1s ease-in-out;
 }
 
-.circular:hover {
-  opacity:.5;
-}
-
-#links {
+.links {
   list-style-type: none;
   text-align:center;
   width: 15%;
   margin:auto;
 }
 
-#links li {
+.links li {
   padding:5px;
   display:inline-block;
   -webkit-transition: opacity .25s ease-in-out;
@@ -107,6 +111,38 @@ i {
   transition: opacity .25s ease-in-out;
 }
 
-#links li:hover {
+.links li:hover {
   opacity:.5;
+}
+
+.gitlink {
+  position:absolute;
+  top:190vh;
+  right:10px;
+}
+
+.info{
+  text-align: left;
+  float:right;
+  width: 400px;
+  background-color:white;
+  border: 2px solid gray;
+  opacity:.9;
+  margin-right:110px;
+  margin-top: 50px;
+  overflow:auto;
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  padding: 10px 20px 0px 20px;
+}
+
+.info p {
+  color:black;
+}
+
+.title {
+  color:black;
+  font-style:italic;
+  font-weight:400;
 }
