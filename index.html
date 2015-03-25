@@ -34,7 +34,7 @@
 	                        <a href="#main">Zachary Verbeck</a>
 	                    </li>
 	                    <li class="page-scroll">
-	                        <a href="#portfolio">Portfolio</a>
+	                        <a href="#projects">Projects</a>
 	                    </li>
 	                    <!-- <li class="page-scroll">
 	                        <a href="#about">About</a>
@@ -48,6 +48,19 @@
 	        </div>
 	        <!-- /.container-fluid -->
 	    </nav>
+
+	    <div id="arrows">
+    		<a href="#main" target="_blank">
+		    	<div id="up">
+					<i class="fa fa-angle-up fa-inverse fa-2x"></i>
+				</div>
+			</a>
+			<a href="#projects" target="_blank">
+		    	<div id="down">
+					<i class="fa fa-angle-down fa-inverse fa-2x"></i>
+		    	</div>
+			</a>
+	    </div>
 
 		<div id="main">
 			<div class="circular">
@@ -84,33 +97,38 @@
   				</li>
 			</ul>
 		</div>
-		<div id="portfolio">
+
+		<div id="projects">
 			<div id="oscl8r">
 				<div class="info">
-					<p><span class="title">oscl8r is a Leap Motion app that was created at dubhacks.</span></p>
+					<p><span class="title">oscl8r is a Leap Motion app that was created at Dubhacks.</span></p>
+					<div>
+						<a href="dubhacks/" target="_blank">
+		  					<p>view</p>
+	  					</a>
+						<a href="https://github.com/zachverb/oscl8r">
+	  						<p>github</p>
+	  					</a>
+  					</div>
 					<p> It tracks the movements of both your hands to make electronic music. Uses the Webkit Audio API to create the oscillators that form the synthesizer and the LeapMotion API to make it interactive. It changes the pitch based on the x-axis, and the highpass and lowpass filter cutoff is effected by the z and y axis respectively. The synthesizer itself is aimed towards non-musicians interested in getting into electronic music, as well as existing musicians who wish to dabble in experimental music creation.</p>
 				</div>
-				<ul class="links gitlink">
-					<li>
-						<a href="https://github.com/zachverb/oscl8r">
-							<span class="fa-stack fa-lg">
-	  							<i class="fa fa-circle fa-stack-2x fa-inverse"></i>
-	  							<i class="fa fa-github-alt fa-stack-1x"></i>
-	  						</span>
-	  					</a>
-	  					<p>github</p>
-	  				</li>
-	  				<li>
-						<a href="dubhacks/" target="_blank">
-							<span class="fa-stack fa-lg">
-	  							<i class="fa fa-circle fa-stack-2x fa-inverse"></i>
-	  							<i class="fa fa-external-link fa-stack-1x"></i>
-	  						</span>
-	  					</a>
-	  					<p>view</p>
-	  				</li>
-				</ul>	
 			</div>
 		</div>
+		<script>
+		$(function() {
+		  $('a[href*=#]:not([href=#])').click(function() {
+		    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+		      var target = $(this.hash);
+		      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+		      if (target.length) {
+		        $('html,body').animate({
+		          scrollTop: target.offset().top
+		        }, 500);
+		        return false;
+		      }
+		    }
+		  });
+		});
+		</script>
 	</body>
 </html>

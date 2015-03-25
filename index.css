@@ -24,6 +24,33 @@ i {
   color:white;
 }
 */
+
+#arrows {
+  height:100px;
+  left:30px;
+  top:50%;
+  position:fixed;
+  width:32px;
+}
+
+#up {
+  height:40px;
+  width:32px;
+}
+
+#up:hover {
+  opacity:.7;
+}
+
+#down {
+  height:40px;
+  width:32px;
+}
+
+#down:hover {
+  opacity:.7;
+}
+
 #main {
   width:100%;
   text-align: center;
@@ -53,6 +80,7 @@ i {
   font-style: normal;
   font-weight: 100;
 }
+
 
 #oscl8r {
   background: url(oscl8r.png);
@@ -115,19 +143,12 @@ i {
   opacity:.5;
 }
 
-.gitlink {
-  position:absolute;
-  top:190vh;
-  right:10px;
-}
-
 .info{
   text-align: left;
   float:right;
   width: 400px;
   background-color:white;
-  border: 2px solid gray;
-  opacity:.9;
+  opacity:.95;
   margin-right:110px;
   margin-top: 50px;
   overflow:auto;
@@ -137,8 +158,21 @@ i {
   padding: 10px 20px 0px 20px;
 }
 
+.info div {
+  text-align:center;
+  width:30%;
+  margin:auto;
+}
+
+.info a {
+  float:left;
+  margin-right:20px;
+  font-weight:400;
+}
+
 .info p {
   color:black;
+  clear:left;
 }
 
 .title {
