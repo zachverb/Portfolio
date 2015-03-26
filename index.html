@@ -5,8 +5,8 @@
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<!-- Latest compiled and minified CSS -->
 	<link href="bootstrap-3.2.0-dist/css/bootstrap.min.css" rel="stylesheet">
+
 	<link rel="stylesheet" href="index.css">
-	<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
 	<!-- made w/ love by Zach Verbeck -->
 	<link href='http://fonts.googleapis.com/css?family=Lato:100,300,100italic,300italic' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="font-awesome-4.2.0/css/font-awesome.min.css">
@@ -36,12 +36,6 @@
 	                    <li class="page-scroll">
 	                        <a href="#projects">Projects</a>
 	                    </li>
-	                    <!-- <li class="page-scroll">
-	                        <a href="#about">About</a>
-	                    </li> 
-	                    <li class="page-scroll">
-	                        <a href="#contact">Contact</a>
-	                    </li> -->
 	                </ul>
 	            </div>
 	            <!-- /.navbar-collapse -->
@@ -63,14 +57,14 @@
 	    </div>
 
 		<div id="main">
-			<div class="circular">
-			</div>
+			<div class="circular"></div>
 			<h1>Zachary Verbeck</h1>
 			<h3>Software Developer</h3>
 			<p id="bio">
 				I am a Senior at the University of Washington studying Informatics.
 				I am passionate about <span class="emphasis">creation</span>, and I spend my free time
-				coding and producing music.
+				coding and producing music. I learn best by <span class="emphasis">doing</span> and I am
+				constantly trying to improve my skills.
 				Please send your emails to
 				<a href="mailto:zgv@uw.edu">zgv@uw.edu</a> if you have any questions or comments.
 			</p>  
@@ -105,7 +99,7 @@
 			</div>
 		</div>
 
-		<!-- Services -->
+		<!-- projects -->
 	    <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
 	    <section id="projects" class="services">
 	        <div class="container">
@@ -117,13 +111,26 @@
 	                            <div class="service-item">
 	                                <span class="fa-stack fa-4x">
 	                                <!-- <i class="fa fa-circle fa-stack-2x"></i> -->
+	                                <i class="fa fa-flask fa-stack-1x text-primary"></i>
+	                            </span>
+	                                <h4>
+	                                    <strong>Informatics Capstone</strong>
+	                                </h4>
+	                                <p>An Android Application that allows for cross-device music collaboration.</p>
+	                                <a href="#" class="btn btn-light" data-toggle="modal" data-target="#portfolioModal3">Learn More</a>
+	                            </div>
+	                        </div>
+	                        <div class="col-md-3 col-sm-6">
+	                            <div class="service-item">
+	                                <span class="fa-stack fa-4x">
+	                                <!-- <i class="fa fa-circle fa-stack-2x"></i> -->
 	                                <i class="fa fa-hand-o-up fa-stack-1x text-primary"></i>
 	                            </span>
 	                                <h4>
 	                                    <strong>oscl8r</strong>
 	                                </h4>
 	                                <p>A small Leap Motion synthesizer that is controlled by your hand.</p>
-	                                <a href="#" class="btn btn-light">Learn More</a>
+	                                <a href="#" class="btn btn-light" data-toggle="modal" data-target="#portfolioModal1">Learn More</a>
 	                            </div>
 	                        </div>
 	                        <div class="col-md-3 col-sm-6">
@@ -136,20 +143,7 @@
 	                                    <strong>ARP+</strong>
 	                                </h4>
 	                                <p>A lightweight HTML5 synthesizer.</p>
-	                                <a href="#" class="btn btn-light">Learn More</a>
-	                            </div>
-	                        </div>
-	                        <div class="col-md-3 col-sm-6">
-	                            <div class="service-item">
-	                                <span class="fa-stack fa-4x">
-	                                <!-- <i class="fa fa-circle fa-stack-2x"></i> -->
-	                                <i class="fa fa-flask fa-stack-1x text-primary"></i>
-	                            </span>
-	                                <h4>
-	                                    <strong>Informatics Capstone</strong>
-	                                </h4>
-	                                <p>An Android Application that allows for cross-device music collaboration.</p>
-	                                <a href="#" class="btn btn-light">Learn More</a>
+	                                <a href="#" class="btn btn-light" data-toggle="modal" data-target="#portfolioModal2">Learn More</a>
 	                            </div>
 	                        </div>
 	                        <div class="col-md-3 col-sm-6">
@@ -162,7 +156,7 @@
 	                                    <strong>ThoughtLink</strong>
 	                                </h4>
 	                                <p>An global classroom platform that would allow for IB students to collaborate with students in other schools.</p>
-	                                <a href="#" class="btn btn-light">Learn More</a>
+	                                <a href="#" class="btn btn-light" data-toggle="modal" data-target="#portfolioModal4">Learn More</a>
 	                            </div>
 	                        </div>
 	                    </div>
@@ -197,7 +191,163 @@
 	        </div>
 	    </footer>
 
+	    <!-- Portfolio Modal -->
+	    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+	        <div class="modal-content">
+	            <div class="close-modal" data-dismiss="modal">
+	                <div class="lr">
+	                    <div class="rl">
+	                    </div>
+	                </div>
+	            </div>
+	            <div class="container">
+	                <div class="row">
+	                    <div class="col-lg-8 col-lg-offset-2">
+	                        <div class="modal-body">
+	                            <h2>oscl8r</h2>
+	                            <hr class="star-primary">
+	                            <img src="img/oscl8r.png" class="img-responsive img-centered" alt="">
+	                            <p>
+	                            	In October 2014, I participated in Dubhacks, the largest hackathon in the Pacific Northwest.
+	                            	I spent my time creating a synthesizer using the Leap Motion API and the Web Audio API. 
+	                            	Oscl8r is a project thinking about music creation for the future - focusing on hand gestures to change the pitch, oscillation, and vibrato to effect synthesizer and drum sounds. We wanted to allow users to have a more engaging and immersive environment in which they can create music easily without being tied down to a mouse and keyboard.
+	                            </p>
+	                            <ul class="list-inline item-details">
+	                                <li>Date:
+	                                    <strong><a href="http://startbootstrap.com">October 2014</a>
+	                                    </strong>
+	                                </li>
+	                                <li>Skills:
+	                                    <strong><a href="http://startbootstrap.com">Javascript, APIs</a>
+	                                    </strong>
+	                                </li>
+	                            </ul>
+	                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	    <!-- Portfolio Modal -->
+	    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+	        <div class="modal-content">
+	            <div class="close-modal" data-dismiss="modal">
+	                <div class="lr">
+	                    <div class="rl">
+	                    </div>
+	                </div>
+	            </div>
+	            <div class="container">
+	                <div class="row">
+	                    <div class="col-lg-8 col-lg-offset-2">
+	                        <div class="modal-body">
+	                            <h2>ARP+</h2>
+	                            <hr class="star-primary">
+	                            <img src="img/arp+.png" class="img-responsive img-centered" alt="">
+	                            <p>
+	                            	In January 2014 I began development on my first HTML5 synth using the Web Audio API.
+	                            	This was not only my first experience with the Web Audio API, but also my first time
+	                            	building my <span class="emphasis"> own original website</span>. Without previous web development training, I dove into the world of HTML, Javascript, and CSS to create something I was <span class="emphasis">passionate</span> about.
+	                            </p>
+	                            <ul class="list-inline item-details">
+	                                <li>Date:
+	                                    <strong><a href="http://startbootstrap.com">October 2014</a>
+	                                    </strong>
+	                                </li>
+	                                <li>Skills:
+	                                    <strong><a href="http://startbootstrap.com">Javascript, APIs</a>
+	                                    </strong>
+	                                </li>
+	                            </ul>
+	                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	    <!-- Portfolio Modal -->
+	    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+	        <div class="modal-content">
+	            <div class="close-modal" data-dismiss="modal">
+	                <div class="lr">
+	                    <div class="rl">
+	                    </div>
+	                </div>
+	            </div>
+	            <div class="container">
+	                <div class="row">
+	                    <div class="col-lg-8 col-lg-offset-2">
+	                        <div class="modal-body">
+	                            <h2>Loop Space</h2>
+	                            <hr class="star-primary">
+	                            <img src="img/oscl8r.png" class="img-responsive img-centered" alt="">
+	                            <p>
+	                            	For my Senior Capstone in Informatics, I am working on an Android application that will serve as collaborative platform for musicians all around the world. This application will act as a looping machine that will allow users to record, layer, and share short audio clips that other users will be able to add to. 
+	                            </p>
+	                            <ul class="list-inline item-details">
+	                                <li>Date:
+	                                    <strong>January 2015 - June 2015
+	                                    </strong>
+	                                </li>
+	                                <li>Skills:
+	                                    <strong>Node.js, Express.js AWS, S3, Heroku, Android, Java, Material Design, REST API Design, 
+	                                    	Cloud technologies
+	                                    </strong>
+	                                </li>
+	                            </ul>
+	                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	    <!-- Portfolio Modal -->
+	    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+	        <div class="modal-content">
+	            <div class="close-modal" data-dismiss="modal">
+	                <div class="lr">
+	                    <div class="rl">
+	                    </div>
+	                </div>
+	            </div>
+	            <div class="container">
+	                <div class="row">
+	                    <div class="col-lg-8 col-lg-offset-2">
+	                        <div class="modal-body">
+	                            <h2>Thought Link</h2>
+	                            <hr class="star-primary">
+	                            <img src="img/oscl8r.png" class="img-responsive img-centered" alt="">
+	                            <p>
+	                            	In October 2014, I participated in Dubhacks, the largest hackathon in the Pacific Northwest.
+	                            	I spent my time creating a synthesizer using the Leap Motion API and the Web Audio API. 
+	                            	Oscl8r is a project thinking about music creation for the future - focusing on hand gestures to change the pitch, oscillation, and vibrato to effect synthesizer and drum sounds. We wanted to allow users to have a more engaging and immersive environment in which they can create music easily without being tied down to a mouse and keyboard.
+	                            </p>
+	                            <ul class="list-inline item-details">
+	                                <li>Date:
+	                                    <strong><a href="http://startbootstrap.com">October 2014</a>
+	                                    </strong>
+	                                </li>
+	                                <li>Skills:
+	                                    <strong><a href="http://startbootstrap.com">Javascript, APIs</a>
+	                                    </strong>
+	                                </li>
+	                            </ul>
+	                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+
+		<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+		<script src="bootstrap-3.2.0-dist/js/bootstrap.min.js"></script>
+		
 		<script>
+
 		$(function() {
 		  $('a[href*=#]:not([href=#])').click(function() {
 		    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
