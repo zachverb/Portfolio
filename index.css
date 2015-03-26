@@ -1,8 +1,7 @@
 * {
   margin:0;
   padding:0;
-  font-family: 'Lato', sans-serif;
-  color:white;
+  font-family: font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
 
 body {
@@ -14,16 +13,6 @@ body {
 i {
   color:black;
 }
-
-/*.navbar {
-  background-color:white;
-  border-color:white;
-}*/
- 
-/*.navbar-default .navbar-nav>li>a {
-  color:white;
-}
-*/
 
 #arrows {
   height:100px;
@@ -59,7 +48,7 @@ i {
   background-color: #6586A7;
   height:100%;
   padding-top:100px;
-  font-family: 'Lato', sans-serif;
+  font-family: font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-style: normal;
   font-weight: 100;
   color:white;
@@ -82,12 +71,15 @@ i {
 }
 
 
-#oscl8r {
-  background: url(oscl8r.png);
+#projects {
+  /*background: url(oscl8r.png);*/
+  padding:auto;
   top:100vh;
   width:100%;
   height:94vh;
+  padding:50px;
   background-size:cover;
+  overflow-x:hidden;
 }
 
 .parallax {
@@ -110,7 +102,7 @@ i {
   border-radius: 75px;
   -webkit-border-radius: 75px;
   -moz-border-radius: 75px;
-  background: url(zachverbeck.jpg);
+  background: url(img/zachverbeck.jpg);
   background-size: cover;
   box-shadow: 0 0 8px rgba(0, 0, 0, .8);
   -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
@@ -152,7 +144,7 @@ i {
   margin-right:110px;
   margin-top: 50px;
   overflow:auto;
-  font-family: 'Lato', sans-serif;
+  font-family: font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-style: normal;
   font-weight: 100;
   padding: 10px 20px 0px 20px;
@@ -175,8 +167,80 @@ i {
   clear:left;
 }
 
+.project-item {
+  padding-left:20px;
+}
+
+.row {
+  margin:auto;
+}
+
+.thumbnail {
+  position: relative;
+  margin:auto;
+  width: 300px;
+  height: 200px;
+  overflow: hidden;
+}
+
+.thumbnail img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 100%;
+  width: auto;
+  -webkit-transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%);
+          transform: translate(-50%,-50%);
+}
+
+.project-item:hover {
+  opacity: .8;
+}
+
+.project-item p {
+  padding-top:20px;
+  font-size: 12pt;
+  margin:auto;
+  color:white;
+  text-align: center;
+  font-weight:100;
+}
+
 .title {
   color:black;
   font-style:italic;
   font-weight:400;
+}
+
+/* Services */
+
+.services {
+    padding: 50px 0;
+}
+
+.service-item {
+    margin-bottom: 30px;
+    font-weight:200;
+}
+
+#projects h2 {
+  padding-bottom: 50px;
+}
+/* Portfolio */
+
+.portfolio {
+    padding: 50px 0;
+}
+
+.portfolio-item {
+    margin-bottom: 30px;
+}
+
+.img-portfolio {
+    margin: 0 auto;
+}
+
+.img-portfolio:hover {
+    opacity: 0.8;
 }
