@@ -44,7 +44,8 @@ i {
   width:100%;
   text-align: center;
   margin-top:50px;
-  overflow:hidden;
+  overflow-x:hidden;
+  overflow-y:visible;
   background-color: #6586A7;
   height:100%;
   padding-top:100px;
@@ -70,6 +71,17 @@ i {
   font-weight: 100;
 }
 
+#bio{
+  width: 50%;
+  margin: auto;
+  padding:20px 0px 20px 0px;
+  font-size: 12pt;
+}
+
+#main a {
+  color: white;
+}
+
 
 #projects {
   /*background: url(oscl8r.png);*/
@@ -80,6 +92,7 @@ i {
   padding:50px;
   background-size:cover;
   overflow-x:hidden;
+  overflow-y:visible;
 }
 
 .parallax {
@@ -114,6 +127,10 @@ i {
   transition: opacity 1s ease-in-out;
 }
 
+.emphasis {
+  font-style: italic;
+}
+
 .links {
   list-style-type: none;
   text-align:center;
@@ -133,6 +150,10 @@ i {
 
 .links li:hover {
   opacity:.5;
+}
+
+.links li p {
+  text-align: center
 }
 
 .info{
