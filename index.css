@@ -13,30 +13,8 @@ i {
   color:black;
 }
 
-#arrows {
-  height:100px;
-  left:30px;
-  top:50%;
-  position:fixed;
-  width:32px;
-}
-
-#up {
-  height:40px;
-  width:32px;
-}
-
-#up:hover {
-  opacity:.7;
-}
-
-#down {
-  height:40px;
-  width:32px;
-}
-
-#down:hover {
-  opacity:.7;
+.navbar {
+  padding-bottom:0px !important;
 }
 
 #main {
@@ -134,8 +112,9 @@ i {
 .links {
   list-style-type: none;
   text-align:center;
-  width: 15%;
+  width: 20%;
   margin:auto;
+  padding-left:30px;
 }
 
 .links li {
@@ -264,6 +243,10 @@ i {
 
 .img-portfolio:hover {
     opacity: 0.8;
+}
+
+.icon {
+  text-align: center;
 }
 
 /* Modal */
