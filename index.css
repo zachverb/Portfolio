@@ -95,9 +95,6 @@ i {
   -moz-border-radius: 75px;
   background: url(img/zachverbeck.jpg);
   background-size: cover;
-  box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-  -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
   -webkit-transition: opacity 1s ease-in-out;
   -moz-transition: opacity 1s ease-in-out;
   -ms-transition: opacity 1s ease-in-out;
