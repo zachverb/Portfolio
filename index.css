@@ -31,6 +31,7 @@ i {
   font-style: normal;
   font-weight: 100;
   color:white;
+  letter-spacing: 2px;
 }
 
 #main h1 {
@@ -109,9 +110,8 @@ i {
 .links {
   list-style-type: none;
   text-align:center;
-  width: 20%;
   margin:auto;
-  padding-left:30px;
+  width:20%;
 }
 
 .links li {
@@ -310,4 +310,16 @@ i {
 .portfolio-modal .modal-backdrop {
     display: none;
     opacity: 0;
+}
+
+.row-centered {
+    text-align:center;
+    padding:10px;
+}
+.col-centered {
+    display:inline-block;
+    float:none;
+    /* reset the text-align */
+    text-align:left;
+    /* inline-block space fix */
 }
