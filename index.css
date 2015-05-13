@@ -107,14 +107,14 @@ i {
   font-style: italic;
 }
 
-.links {
+#links {
   list-style-type: none;
   text-align:center;
   margin:auto;
   width:25%;
 }
 
-.links li {
+#links li {
   padding:5px;
   display:inline-block;
   -webkit-transition: opacity .25s ease-in-out;
@@ -124,11 +124,11 @@ i {
   transition: opacity .25s ease-in-out;
 }
 
-.links li:hover {
+#links li:hover {
   opacity:.5;
 }
 
-.links li p {
+#links li p {
   text-align: center
 }
 
