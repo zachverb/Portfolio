@@ -2,6 +2,7 @@ var path = require('path');
 var merge = require('webpack-merge');
 var fs = require('fs');
 var webpack = require('webpack');
+var HtmlwebpackPlugin = require('html-webpack-plugin');
 
 var nodeModules = {};
 fs.readdirSync('node_modules')
@@ -20,7 +21,7 @@ var isDev = TARGET === 'dev';
 var jsxLoader = isDev ? ['react-hot', 'babel?stage=1'] : ['babel?stage=1'];
 
 var common = {
-  entry: path.resolve(ROOT_PATH, 'index.js'),
+  entry: path.resolve(ROOT_PATH, 'client', 'components', 'App.jsx'),
   output: {
     path: path.resolve(ROOT_PATH, 'public'),
     filename: 'bundle.js'
