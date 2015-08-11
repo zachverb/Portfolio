@@ -1,4 +1,7 @@
 node_modules
 public/bootstrap-3.2.0-dist
 public/font-awesome-4.2.0
+public/bundle.js
 .idea
+index.html
+index.css

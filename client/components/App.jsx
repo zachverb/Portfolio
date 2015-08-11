@@ -2,10 +2,12 @@ import React from 'react';
 import Header from 'components/Header';
 import Main from 'components/Main';
 import Blog from 'components/Blog/Blog';
+import Post from 'components/Blog/Post';
 import Projects from 'components/Projects';
 import Footer from 'components/Footer';
 import Router from 'react-router';
 import { DefaultRoute, Route, RouteHandler } from 'react-router';
+import './App.less';
 
 
 class App extends React.Component {
@@ -13,7 +15,9 @@ class App extends React.Component {
     return (
     <div>
       <Header />
-      <RouteHandler />
+      <div className="page">
+        <RouteHandler {...this.props}/>
+      </div>
       <Footer />
     </div>
     );
@@ -25,9 +29,10 @@ let routes = (
     <DefaultRoute name="main" handler={Main}/>
     <Route name="projects" path="/projects" handler={Projects}/>
     <Route name="blog" path="/blog" handler={Blog} />
+    <Route name="post" path="/post/:post_id" handler={Post} />
   </Route>
 );
 
-Router.run(routes, function (Handler) {
-  React.render(<Handler/>, document.body);
+Router.run(routes, function (Handler, state) {
+  React.render(<Handler params={state.params}/>, document.body);
 });

@@ -1,7 +1,7 @@
 * {
   margin:0;
   padding:0;
-  font-family: font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
 
 body {
@@ -27,7 +27,7 @@ i {
   height:100%;
   min-height:100vh;
   padding-top:100px;
-  font-family: font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-style: normal;
   font-weight: 100;
   color:white;
@@ -36,7 +36,7 @@ i {
 
 #main h1 {
   top: 30%;
-  transform: translate(-50%, -50%) 
+  transform: translate(-50%, -50%)
   font-size:15pt;
   display:inline-block;
   letter-spacing: 2px;
@@ -94,7 +94,7 @@ i {
   border-radius: 75px;
   -webkit-border-radius: 75px;
   -moz-border-radius: 75px;
-  background: url(img/zachverbeck.jpg);
+  background: url(public/img/zachverbeck.jpg);
   background-size: cover;
   -webkit-transition: opacity 1s ease-in-out;
   -moz-transition: opacity 1s ease-in-out;
@@ -141,7 +141,7 @@ i {
   margin-right:110px;
   margin-top: 50px;
   overflow:auto;
-  font-family: font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-style: normal;
   font-weight: 100;
   padding: 10px 20px 0px 20px;

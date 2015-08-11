@@ -1,4 +1,5 @@
 import React from 'react';
+import './Main.less';
 
 export default class Main extends React.Component {
   render() {
@@ -12,8 +13,7 @@ export default class Main extends React.Component {
         I am passionate about <span className="emphasis">creation</span>, and I spend my free time
         coding and producing music. I learn best by <span className="emphasis">doing</span> and I am
         constantly trying to improve my skills.
-        Please send your emails to
-        <a href="mailto:zgv@uw.edu">zgv@uw.edu</a> if you have any questions.
+        Please send your emails to <a href="mailto:zgv@uw.edu">zgv@uw.edu</a> if you have any questions.
       </p>
       <div id="links" className="row row-centered">
         <div className="col-md-4 col-xs-12 icon">

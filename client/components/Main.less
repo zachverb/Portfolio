@@ -1,0 +1,86 @@
+#main {
+  width: 100%;
+  text-align: center;
+  overflow-x: hidden;
+  overflow-y: visible;
+  background-color: #6586A7;
+  height: 100%;
+  min-height: 100vh;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  color: white;
+  letter-spacing: 2px;
+  h1 {
+    top: 30%;
+    font-size: 15pt;
+    display: inline-block;
+    letter-spacing: 2px;
+    font-style: normal;
+    font-weight: 100;
+  }
+  h3 {
+    top: 40%;
+    font-style: normal;
+    font-weight: 100;
+  }
+  a {
+    color: white;
+  }
+}
+
+#bio {
+  width: 50%;
+  margin: auto;
+  padding:20px 0px 20px 0px;
+  font-size: 12pt;
+  font-weight:100;
+}
+
+.circular {
+  margin-top: 5px;
+  margin-bottom:5px;
+  margin-left:auto;
+  margin-right:auto;
+  width: 150px;
+  height: 150px;
+  border-radius: 75px;
+  -webkit-border-radius: 75px;
+  -moz-border-radius: 75px;
+  background-image: url("../../public/img/zachverbeck.jpg");
+  background-size: cover;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -ms-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
+#links {
+  list-style-type: none;
+  text-align:center;
+  margin:auto;
+  width:25%;
+  font-weight:100;
+  .icon {
+    padding:5px;
+    display:inline-block;
+    .fade-transition(opacity .25s ease-in-out;);
+    &:hover {
+      opacity:.5;
+    }
+    p {
+      text-align: center
+    }
+  }
+}
+
+.emphasis {
+  font-style: italic;
+}
+
+.fade-transition(...) {
+  -webkit-transition: @arguments;
+  -moz-transition: @arguments;
+  -o-transition: @arguments;
+  transition: @arguments;
+}
