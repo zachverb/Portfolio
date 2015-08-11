@@ -1,4 +1,4 @@
 Portfolio-Site
 ==============
 
-In progress: The site that holds my portfolio
+A small personal website. Contains information about me, my personal projects, and a light-weight blog.
