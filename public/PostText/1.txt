@@ -1,0 +1,12 @@
+# Hello World!
+This is the beginning of my humble blog that will detail my journey through
+learning programming. I decided to write this blog for two main reasons. First,
+I often struggle finding resources about what I'm trying to write. Often-times
+I find my solutions by cobbling together poorly copy-pasta'd Stack Overflow answers,
+only to find that there were much more elegant solutions hiding in the
+
+```
+function helloWorld() {
+  console.log("Hello world!");
+}
+```
