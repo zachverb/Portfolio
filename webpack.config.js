@@ -2,7 +2,6 @@ var path = require('path');
 var merge = require('webpack-merge');
 var fs = require('fs');
 var webpack = require('webpack');
-var HtmlwebpackPlugin = require('html-webpack-plugin');
 
 var nodeModules = {};
 fs.readdirSync('node_modules')
