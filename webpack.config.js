@@ -18,13 +18,20 @@ var ROOT_PATH = path.resolve(__dirname);
 
 var isDev = TARGET === 'dev';
 
-var jsxLoader = isDev ? ['react-hot', 'babel?stage=1'] : ['babel?stage=1'];
+var entryPath = [path.resolve(ROOT_PATH, 'client', 'components', 'App.jsx')];
+
+var jsxLoader = ['babel?stage=1'];
+
+if(isDev) {
+  jsxLoader.unshift('react-hot');
+}
 
 var common = {
-  entry: path.resolve(ROOT_PATH, 'client', 'components', 'App.jsx'),
+  entry: entryPath,
   output: {
     path: path.resolve(ROOT_PATH, 'public'),
-    filename: 'bundle.js'
+    filename: 'bundle.js',
+    publicPath: '/'
   },
   resolve: {
     alias: {

@@ -5,6 +5,7 @@ import Blog from 'components/Blog/Blog';
 import Post from 'components/Blog/Post';
 import Projects from 'components/Projects';
 import Footer from 'components/Footer';
+import Modal from 'components/Modal';
 import Router from 'react-router';
 import { DefaultRoute, Route, RouteHandler } from 'react-router';
 import './App.less';
@@ -30,6 +31,7 @@ let routes = (
     <Route name="projects" path="/projects" handler={Projects}/>
     <Route name="blog" path="/blog" handler={Blog} />
     <Route name="post" path="/post/:post_id" handler={Post} />
+    <Route name="modal" path="/modal/:project_name" handler={Modal} />
   </Route>
 );
 

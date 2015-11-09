@@ -9,11 +9,8 @@ export default class Main extends React.Component {
       <h1>Zachary Verbeck</h1>
       <h3>Software Developer</h3>
       <p id="bio">
-        I am a recent University of Washington Informatics graduate.
-        I am passionate about <span className="emphasis">creation</span>, and I spend my free time
-        coding and producing music. I learn best by <span className="emphasis">doing</span> and I am
-        constantly trying to improve my skills.
-        Please send your emails to <a href="mailto:zgv@uw.edu">zgv@uw.edu</a> if you have any questions.
+        I am a Software Engineer currently working at <strong>Uber</strong>. I am passionate about developing beautiful UIs in React.
+        I want to continue learning at every opportunity I get.
       </p>
       <div id="links" className="row row-centered">
         <div className="col-md-4 col-xs-12 icon">
