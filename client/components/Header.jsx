@@ -14,13 +14,13 @@ export default class Header extends React.Component {
           <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul className="nav navbar-nav navbar-right">
               <li>
-                <Link to="main">Zachary Verbeck</Link>
+                <Link to="/">Zachary Verbeck</Link>
               </li>
               <li className="page-scroll">
-                <Link to="projects">Projects</Link>
+                <Link to="/projects">Projects</Link>
               </li>
               <li className="page-scroll">
-                <Link to="blog">Blog</Link>
+                <Link to="/blog">Blog</Link>
               </li>
             </ul>
           </div>

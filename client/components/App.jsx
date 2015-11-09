@@ -1,4 +1,7 @@
 import React from 'react';
+import {render} from 'react-dom';
+import {Router, IndexRoute, Route} from 'react-router';
+
 import Header from 'components/Header';
 import Main from 'components/Main';
 import Blog from 'components/Blog/Blog';
@@ -6,8 +9,7 @@ import Post from 'components/Blog/Post';
 import Projects from 'components/Projects';
 import Footer from 'components/Footer';
 import Modal from 'components/Modal';
-import Router from 'react-router';
-import { DefaultRoute, Route, RouteHandler } from 'react-router';
+
 import './App.less';
 
 
@@ -17,7 +19,7 @@ class App extends React.Component {
     <div>
       <Header />
       <div className="page">
-        <RouteHandler {...this.props}/>
+        {this.props.children}
       </div>
       <Footer />
     </div>
@@ -25,16 +27,16 @@ class App extends React.Component {
   }
 }
 
-let routes = (
-  <Route name="app" path="/" handler={App}>
-    <DefaultRoute name="main" handler={Main}/>
-    <Route name="projects" path="/projects" handler={Projects}/>
-    <Route name="blog" path="/blog" handler={Blog} />
-    <Route name="post" path="/post/:post_id" handler={Post} />
-    <Route name="project" path="/projects/:project_name" handler={Modal} />
-  </Route>
-);
-
-Router.run(routes, function (Handler, state) {
-  React.render(<Handler params={state.params}/>, document.body);
-});
+render((<Router>
+    <Route path="/" component={App}>
+      <IndexRoute component={Main}/>
+      <Route path="projects">
+        <IndexRoute component={Projects} />
+        <Route path="project/:project_name" component={Modal} />
+      </Route>
+      <Route path="blog" component={Blog}>
+        <Route path="post/:post_id" component={Post} />
+      </Route>
+    </Route>
+  </Router>
+  ), document.getElementById('react'));
