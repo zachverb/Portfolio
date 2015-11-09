@@ -8,7 +8,7 @@ export default class Blog extends React.Component {
     return (
       <section id='blog'>
           <h2>blug</h2>
-          <Link to="post" params={{post_id: '1'}}>Hello World</Link>
+          <Link to="/blog/post/1">Hello World</Link>
       </section>
     );
   }

@@ -2,21 +2,6 @@ import React from 'react';
 import {Link} from 'react-router';
 
 export default class Projects extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      modalIndex: null
-    };
-  }
-
-  openModal(num) {
-    this.setState({modalIndex: num})
-  }
-
-  closeModal() {
-    this.setState({modalIndex: null});
-  }
-
   render() {
     return (
       <section id="projects" className="services">

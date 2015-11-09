@@ -27,14 +27,16 @@ class App extends React.Component {
   }
 }
 
-render((<Router>
+render((
+  <Router>
     <Route path="/" component={App}>
       <IndexRoute component={Main}/>
       <Route path="projects">
         <IndexRoute component={Projects} />
         <Route path="project/:project_name" component={Modal} />
       </Route>
-      <Route path="blog" component={Blog}>
+      <Route path="blog">
+        <IndexRoute component={Blog} />
         <Route path="post/:post_id" component={Post} />
       </Route>
     </Route>
