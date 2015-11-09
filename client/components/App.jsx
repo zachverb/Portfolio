@@ -31,7 +31,7 @@ let routes = (
     <Route name="projects" path="/projects" handler={Projects}/>
     <Route name="blog" path="/blog" handler={Blog} />
     <Route name="post" path="/post/:post_id" handler={Post} />
-    <Route name="modal" path="/modal/:project_name" handler={Modal} />
+    <Route name="project" path="/projects/:project_name" handler={Modal} />
   </Route>
 );
 
